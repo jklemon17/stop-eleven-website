@@ -1,0 +1,15 @@
+<header class="navbar navbar-fixed-top navbar-inverse">
+  <div class="container">
+    <%= image_tag("bible.jpg", alt: "Bible picture", id: "header-img") %>
+    <h2>
+      <%= link_to "Stop 11 Road church of Christ", root_path, id: "logo" %>
+    </h2>
+    <nav>
+      <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to "Home", root_path %></li>
+        <li><%= link_to "Our Congregation", congregation_path %></li>
+        <li><%= link_to "Our Minister", minister_path %></li>
+      </ul>
+    </nav>
+  </div>
+</header>

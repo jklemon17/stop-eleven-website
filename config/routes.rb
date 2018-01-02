@@ -1,3 +1,6 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  root 'welcome#church'
+  get '/the_church_of_Christ', to: 'welcome#church'
+  get '/congregation', to: 'welcome#congregation'
+  get '/minister', to: 'welcome#minister'
 end
